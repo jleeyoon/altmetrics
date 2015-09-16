@@ -1,0 +1,18 @@
+{
+    "contents" : "# README\n\n9/15/2015 JIYOUNG LEE\n\nTHIS DIRECTORY CONTAINS INFOR FOR THE **ALTMETRICS** STUDY. _including_:\n\n* data files  \n* scripts  \n* results\n\nTo view this README, type `cat README.md`\n\n```\ninstall.packages(\"rmarkdown\")\n```\n\nThe data for this project originally came from [Priem et al. 2012.](http://arxiv.org/abs/1203.4745)\n\nthe processed data files were downloaded 9/15/15, including both [raw data][link1] and the [normalized data][link2].\n\n[link1]: http://war.githubusercontent.com/jdblischak/r-in\n[link2]: \n",
+    "created" : 1442330863335.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1644216675",
+    "id" : "DE22EB8D",
+    "lastKnownWriteTime" : 1442331633,
+    "path" : "C:/Users/Jiyoung/altmetrics/data/README.md",
+    "project_path" : "README.md",
+    "properties" : {
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "markdown"
+}

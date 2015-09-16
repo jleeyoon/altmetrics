@@ -1,0 +1,31 @@
+---
+title: "On the origin of citations"
+author: "Jiyoung Lee"
+date: "September 15, 2015"
+output: html_document 
+
+---
+
+# Load the data
+
+```{r load_data}
+counts_raw <- read.delim("counts-raw.txt.gz")
+counts_norm <- read.delim("counts-norm.txt.gz")
+```
+
+
+# Data exploration
+
+What's the number of Facebook shares per paper?
+
+```{r facebook_histogram, fig.cap="Fig.2. How popular articles on Facebook"} 
+hist(counts_raw$facebookShareCount, main = "Facebook shares per paper", xlab="#shares")
+
+```
+
+
+the average number of Facebook shares per paper in the data set
+`r mean(counts_raw$facebookShareCounts)`
+
+
+

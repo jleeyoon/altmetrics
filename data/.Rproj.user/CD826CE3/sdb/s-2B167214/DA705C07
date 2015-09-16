@@ -1,0 +1,18 @@
+{
+    "contents" : "mean(counts_raw$wosCountThru2011)\nhist(counts_raw$wosCountThru2011)\nhist(sqrt(counts_raw$wosCountThru2011))\nplot(counts_raw$daysSincePublished, counts_raw$wosCountThru2011)\ncounts_raw$authorsCount[1:10] > 7\ncounts_raw$authorsCount[1:10]\ncounts_raw$authorsCount[1:10] != 7\ndim(counts_raw[counts_raw$journal != \"pone\", ])\ndim(counts_raw[counts_raw$journal %in% c(\"pone\", \"pbio\", \"pgen\"),])\ndim(counts_raw[grepl(\"Immunology\", counts_raw$plosSubjectTags), ])\nhead(counts_raw$plosSubjectTags)\nif (anyNA(c(1,1,1))) {\n  print(\"Be careful\")\n} else {\n  print(\"Lookin good!\")\n}\n\nfor (i in 1:10) {\n  print(i)\n}\n\nfor (i in 1:length(counts_raw$wosCountThru2011)) {\n  x <- c(x, counts_raw$wosCountThru2011[i] + 1)\n}\n\nlevels(counts_raw$journal)\nresults <- numeric(length = length(levels(counts_raw$journal)))\nnames(results) <- levels(counts_raw$journal)\nresults[\"pone\"]\nfor (j in levels(counts_raw$journal)) {\n  results[j] <- mean(counts_raw$wosCountThru2011[counts_raw$journal == j])\n}\n     ",
+    "created" : 1442328220169.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "2987165176",
+    "id" : "DA705C07",
+    "lastKnownWriteTime" : 7011605692497750387,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
